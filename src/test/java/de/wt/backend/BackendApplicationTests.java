@@ -88,7 +88,7 @@ class BackendApplicationTests {
         mvc = MockMvcBuilders.standaloneSetup(clientController).build();
         mvc.perform(get("/").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello World")));
+                .andExpect(content().string(equalTo("Hello!")));
     }
 }
 

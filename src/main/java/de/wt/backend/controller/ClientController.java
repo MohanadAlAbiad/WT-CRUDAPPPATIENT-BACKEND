@@ -16,7 +16,7 @@ public class ClientController {
 
     @RequestMapping("/")
     public String hello_world(){
-        return "Hello there!";
+        return "Hello!";
     }
 
     // add Patient
